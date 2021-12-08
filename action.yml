@@ -16,7 +16,7 @@ inputs:
     readme_path:
         description: "Path of the readme file you want to update"
         default: ""
-        required: false
+        required: true
 
     branch:
         description: "Branch of the README.md"
