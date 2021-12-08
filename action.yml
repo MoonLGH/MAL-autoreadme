@@ -22,14 +22,17 @@ inputs:
         description: "Branch of the README.md"
         default: "main"
         required: false
-
 runs:
     using: "composite"
     steps:
-        - name: Install dep
-        - uses: actions/setup-node@v2
+        - uses: actions/checkout@v2
+        - name: Set Node.js 14
+            uses: actions/setup-node@v2.4.1
             with:
-                node-version: '14'
-        - run: npm install
-        - name: Running the script
-          - run: node index.ts
+                node-version: 14
+        - name: Install dependencies
+          run: npm i
+          shell: bash
+        - name: Run the script
+          run: node index.js
+          shell: bash
