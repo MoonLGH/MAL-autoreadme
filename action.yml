@@ -18,16 +18,15 @@ inputs:
         default: ""
         required: false
 
-    readme_path:
+    branch:
         description: "Branch of the README.md"
-        default: "master"
+        default: "main"
         required: false
 
 runs:
     using: "composite"
     steps:
         - name: Install dep
-          - uses: actions/checkout@v2
           - uses: actions/setup-node@v2
             with:
               node-version: '14'
