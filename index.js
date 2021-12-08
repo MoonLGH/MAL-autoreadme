@@ -10,6 +10,9 @@ async function init(){
     let readme_path = core.getInput("readme_path");
     let branch = core.getInput("branch");
 
+    console.log("username: " + username);
+    console.log("readme_path: " + readme_path);
+    console.log("branch: " + branch);
     let fetched = (await (await fetch(`https://api.jikan.moe/v3/user/${username}/history`)).json())
 
     let history = fetched.history;
