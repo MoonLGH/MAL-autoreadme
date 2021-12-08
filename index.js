@@ -1,4 +1,4 @@
-// const core = require("@actions/core");
+const core = require("@actions/core");
 const fetch = require("node-fetch");
 const listparser = require("./lib/parse-list.js")
 const readmeutil = require("./lib/readme-util.js")
