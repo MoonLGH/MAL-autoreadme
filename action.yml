@@ -41,3 +41,8 @@ runs:
           working-directory: ./MAL-autoreadme
           run: node index.js
           shell: bash
+          env:
+              username: ${{ inputs.username }}
+              gh_token: ${{ inputs.gh_token }}
+              readme_path: ${{ inputs.readme_path }}
+              branch: ${{ inputs.branch }}
