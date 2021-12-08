@@ -27,9 +27,9 @@ runs:
     using: "composite"
     steps:
         - name: Install dep
-          - uses: actions/setup-node@v2
+        - uses: actions/setup-node@v2
             with:
-              node-version: '14'
-          - run: npm install
+                node-version: '14'
+        - run: npm install
         - name: Running the script
           - run: node index.ts
