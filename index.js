@@ -1,4 +1,3 @@
-// const core = require("@actions/core");
 require("dotenv").config();
 const fetch = require("node-fetch");
 const listparser = require("./lib/parse-list.js")
@@ -16,6 +15,7 @@ async function init(){
     console.log("branch: " + branch);
     let fetched = (await (await fetch(`https://api.jikan.moe/v3/user/${username}/history`)).json())
 
+    console.log(fetched)
     let history = fetched.history;
 
     console.log("History Founded, Parsing...")
