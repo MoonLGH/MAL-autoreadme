@@ -29,9 +29,6 @@ runs:
         - name: cloning MAL-autoreadme
           run: git clone https://github.com/MoonLGH/MAL-autoreadme.git
           shell: bash
-        - name: copy .env
-          run: cp .env /MAL-autoreadme
-          shell: bash
         - name: Set Node.js 14
           uses: actions/setup-node@v2.4.1
           with:
