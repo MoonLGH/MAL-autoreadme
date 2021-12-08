@@ -1,14 +1,15 @@
-const core = require("@actions/core");
+// const core = require("@actions/core");
+require("dotenv").config();
 const fetch = require("node-fetch");
 const listparser = require("./lib/parse-list.js")
 const readmeutil = require("./lib/readme-util.js")
 const git = require("korefile")
 
 async function init(){
-    let username = core.getInput("username");
-    let gh_token = core.getInput("gh_token");
-    let readme_path = core.getInput("readme_path");
-    let branch = core.getInput("branch");
+    let username = process.env.username
+    let gh_token = process.env.gh_token
+    let readme_path = process.env.readme_path
+    let branch = process.env.branch
 
     console.log("username: " + username);
     console.log("readme_path: " + readme_path);
