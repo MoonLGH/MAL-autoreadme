@@ -22,6 +22,15 @@ inputs:
         description: "Branch of the README.md"
         default: "main"
         required: false
+    useScraping:
+        description: "Scrape Mal manually instead of using jikan api"
+        default: "false"
+        required: false
+    limit:
+        description: "Limit of history"
+        default: "10"
+        required: false
+
 runs:
     using: "composite"
     steps:
@@ -46,3 +55,5 @@ runs:
               gh_token: ${{ inputs.gh_token }}
               readme_path: ${{ inputs.readme_path }}
               branch: ${{ inputs.branch }}
+              useScraping: ${{ inputs.useScraping }}
+              limit: ${{ inputs.limit }}

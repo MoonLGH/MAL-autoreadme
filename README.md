@@ -50,7 +50,10 @@ jobs:
 | `gh_token`        | Authorized github token                             | ${{ github.token }}                    | `False`  | ""
 | `readme_path`     | Path to the readme file Repo to edit                     | ""                          | `True`  | "[MoonLGH/MoonLGH](https://github.com/MoonLGH/MoonLGH)" |
 | `branch`     | branch the readme file to edit                     | "main"                          | `True`  | "main" |
+| `useScraping`     | Scraping the MAL history web instead of using JikanAPi                     | "false"                          | `false`  | "true" |
+| `limit`     | limit the post of the history                     | "10"                          | `false`  | "15" |
 
+> useScraping is still in beta and possibly a lot of bugs in it
 
 ## Example
 
@@ -62,7 +65,7 @@ You can find it on my [profile](https://github.com/MoonLGH/MoonLGH)!
 
 Dont worry, its just JikanApi not updating stuff by that time, just wait for couple more hour (1 - 12) and it will be updated!\
 For more details, just open your history on https://myanimelist.net/history/YourUsername and if it updated there, open https://api.jikan.moe/v3/user/YourUsername/history and look if it updated there.\
-if it both updated, try reruning action or wait for next action executed.
+if it both updated, try using useScraping instead, reruning action or wait for next action executed.
 
 ## Contributing
 
