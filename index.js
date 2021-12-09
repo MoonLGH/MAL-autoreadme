@@ -31,6 +31,7 @@ async function init(){
         let fetched = await parser.parseHistory(username)
         console.log(fetched)
         list = parser.parseListScraping(fetched,limit)
+        console.log("History Parsed Success \n",list)
     }
     let readme = await readmeutil.readme(readme_path, gh_token)
     console.log("\nGetting current README.md")
