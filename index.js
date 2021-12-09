@@ -10,7 +10,7 @@ async function init(){
     let readme_path = process.env.readme_path
     let branch = process.env.branch
     let useScraping = JSON.parse(process.env.useScraping || false)
-    let limit = process.env.limit || 10
+    let limit = process.env.limit
 
     console.log("username: " + username);
     console.log("readme_path: " + readme_path);
