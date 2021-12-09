@@ -56,3 +56,4 @@ runs:
               readme_path: ${{ inputs.readme_path }}
               branch: ${{ inputs.branch }}
               useScraping: ${{ inputs.useScraping }}
+              limit: ${{ inputs.limit }}
