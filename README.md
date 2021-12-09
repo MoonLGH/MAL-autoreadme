@@ -48,7 +48,7 @@ jobs:
 | ----------------- | --------------------------------------------------- | -------------------------------------- | -------- | ------- |
 | `username`         | Your MyAnimeList user name                                | ""                                     | `True`   | MoonLMAL
 | `gh_token`        | Authorized github token                             | ${{ github.token }}                    | `False`  | ""
-| `readme_path`     | Path to the readme file Repo to edit                     | ""                          | `True`  | "[MoonLGH/MoonLGH](https://MoonLGH/MoonLGH)" |
+| `readme_path`     | Path to the readme file Repo to edit                     | ""                          | `True`  | "[MoonLGH/MoonLGH](https://github.com/MoonLGH/MoonLGH)" |
 | `branch`     | branch the readme file to edit                     | "main"                          | `True`  | "main" |
 
 
