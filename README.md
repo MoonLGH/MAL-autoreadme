@@ -63,3 +63,8 @@ You can find it on my [profile](https://github.com/MoonLGH/MoonLGH)!
 Dont worry, its just JikanApi not updating stuff by that time, just wait for couple more hour (1 - 12) and it will be updated!\
 For more details, just open your history on https://myanimelist.net/history/YourUsername and if it updated there, open https://api.jikan.moe/v3/user/YourUsername/history and look if it updated there.\
 if it both updated, try reruning action or wait for next action executed.
+
+## Contributing
+
+I make mistakes here, or just want to help with this project ?\
+yeah, just make a pr im gonna consider it
