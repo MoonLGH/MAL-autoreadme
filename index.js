@@ -15,6 +15,8 @@ async function init(){
     console.log("username: " + username);
     console.log("readme_path: " + readme_path);
     console.log("branch: " + branch);
+    console.log("limit: " + limit);
+    console.log("useScraping: " + useScraping);
 
     let list
     if(useScraping === false){
