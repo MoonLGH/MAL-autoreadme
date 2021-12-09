@@ -1,4 +1,4 @@
-# AniList readme workflow
+# MAL readme workflow
 
 > Simple workflow that will add your latest MAL History into your readme!
 
@@ -12,7 +12,7 @@ This is basicly wallmart copy of [pxseu/anilist-readme](https://github.com/pxseu
 Simply add this to your README.md
 
 ```html
-# 🌸 My recent AniList activity
+# 🌸 My recent MAL activity
 
 <!-- MAL_ACTIVITY:start -->
 
@@ -44,14 +44,22 @@ jobs:
 
 ## Settings
 
-| Option            | Description                                         | Default                                | Required |
-| ----------------- | --------------------------------------------------- | -------------------------------------- | -------- |
-| `username`         | Your MyAnimeList user name                                | ""                                     | `True`   |
-| `gh_token`        | Authorized github token                             | ${{ github.token }}                    | `False`  |
-| `readme_path`     | Path to the readme file to edit                     | ""                          | `True`  |
-| `branch`     | branch the readme file to edit                     | "main"                          | `True`  |
+| Option            | Description                                         | Default                                | Required | Example |
+| ----------------- | --------------------------------------------------- | -------------------------------------- | -------- | ------- |
+| `username`         | Your MyAnimeList user name                                | ""                                     | `True`   | MoonLMAL
+| `gh_token`        | Authorized github token                             | ${{ github.token }}                    | `False`  | ""
+| `readme_path`     | Path to the readme file Repo to edit                     | ""                          | `True`  | "[MoonLGH/MoonLGH](https://MoonLGH/MoonLGH)" |
+| `branch`     | branch the readme file to edit                     | "main"                          | `True`  | "main" |
 
 
 ## Example
 
 You can find it on my [profile](https://github.com/MoonLGH/MoonLGH)!
+
+## Troubleshooting
+
+- Your Activity is not updating ?
+
+Dont worry, its just JikanApi not updating stuff by that time, just wait for couple more hour (1 - 12) and it will be updated!\
+For more details, just open your history on https://myanimelist.net/history/YourUsername and if it updated there, open https://api.jikan.moe/v3/user/YourUsername/history and look if it updated there.\
+if it both updated, try reruning action or wait for next action executed.
