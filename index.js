@@ -24,7 +24,7 @@ async function init(){
         console.log(fetched)
         let history = fetched.history;
         console.log("History Founded, Parsing...")
-        list = parser.parse(history,limit)
+        list = parser.parseList(history,limit)
         console.log("History Parsed Success \n",list)
     } else {
         console.log("Using Scraping")
