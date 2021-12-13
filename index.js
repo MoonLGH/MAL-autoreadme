@@ -52,6 +52,12 @@ async function init(){
         })
     });
 
+    if(readme === newreadme){
+        console.log("README.md is not changed")
+        console.log("Canceling github push")
+        return
+    }
+    
     file.writeFile("README.md", newreadme);
 
     console.log("README.md Updated, Ending Process...")
